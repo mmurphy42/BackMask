@@ -30,4 +30,6 @@ The program was optimized in a number of ways. A common strategy might be that e
 
 When assembling phrases we use the fact that we only use bigrams (as opposed to trigrams) to assume that we know the top score for a given word and all its previous words, so all we have to do is compute the current score with that word.
 
+Because there are so many possible traversals through the letters, this program is multithreaded. There is a control in GlobalWorker.h as to how many threads. Also, when a word is found, each thread doesn't have to wait for a mutex until it gets to add to the results, since there's a container for each thread's results. This greatly saves time. 
+
 Recursion? This program uses recursion, and while the hope is that the compiler is optimizing this, a big TODO is to implement an iterative solution just in case.
