@@ -15,7 +15,7 @@ Input: Play Chess Online on the #1 Chess Site - Play with over 20 million member
 FINAL STRING: BELIAL PET IS HE HELL 
 351ms
 
-The bottom (351ms) is the total time taken to do the whole computation. Now let's try something more intensive!
+So we got: BELIAL PET IS HE HELL (check it yourself) in 351ms of processing time.
 
 ./bin/BackMask "NYWYKHDHSXTLQSFHNZUMPHYQATXFXZPDNUKIKHVRMPJQNUSTIUEPMJGKUQAK"
 Input: NYWYKHDHSXTLQSFHNZUMPHYQATXFXZPDNUKIKHVRMPJQNUSTIUEPMJGKUQAK
